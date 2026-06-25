@@ -14,6 +14,16 @@ const links = [
     href: 'https://github.com/rafaignaulin',
     icon: '🐙',
   },
+  {
+    label: 'YouTube',
+    href: 'https://www.youtube.com/@RafaelIgnaulin',
+    icon: '▶️',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/rafaignaulin/',
+    icon: '📸',
+  },
 ];
 
 export default function Home() {
