@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       'Senior Data Engineer delivering enterprise-scale data platforms from anywhere. Blog, portfolio, and links.',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Rafael Ignaulin — Senior Data Engineer',
     description:
       'Senior Data Engineer delivering enterprise-scale data platforms from anywhere.',
@@ -68,7 +68,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
         />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        {/* Cloudflare Web Analytics (cookieless) */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: 'ef7b3d31dfb54000aef843ecd79172ba' })}
+        />
+      </body>
     </html>
   );
 }
