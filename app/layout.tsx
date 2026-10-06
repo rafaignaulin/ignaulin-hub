@@ -8,8 +8,9 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+// Canonical host is www: Vercel 308-redirects the apex ignaulin.com to www.ignaulin.com (domain config), so every URL here must be www.
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ignaulin.com'),
+  metadataBase: new URL('https://www.ignaulin.com'),
   title: 'Rafael Ignaulin — Senior Data Engineer',
   description:
     'Senior Data Engineer delivering enterprise-scale data platforms from anywhere. Blog, portfolio, and links.',
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Rafael Ignaulin',
     type: 'website',
     locale: 'en_US',
-    url: 'https://ignaulin.com',
+    url: 'https://www.ignaulin.com',
     title: 'Rafael Ignaulin — Senior Data Engineer',
     description:
       'Senior Data Engineer delivering enterprise-scale data platforms from anywhere. Blog, portfolio, and links.',
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://ignaulin.com',
+    canonical: 'https://www.ignaulin.com',
   },
 };
 
@@ -50,7 +51,7 @@ const jsonLD = {
   '@type': 'Person',
   name: 'Rafael Ignaulin',
   jobTitle: 'Senior Data Engineer',
-  url: 'https://ignaulin.com',
+  url: 'https://www.ignaulin.com',
   sameAs: [
     'https://blog.ignaulin.com',
     'https://rafa.ignaulin.com',
